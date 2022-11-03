@@ -49,6 +49,19 @@ function validateForm(){
         return false;
     }
 
+    let data = {
+        name : name,
+        second_name : second_name,
+        email: email,
+        password1: passwd1,
+        password2: passwd2,
+        gender: gender,
+        opt: valfromselect,
+        subscribe: subs
+    }
+
+    console.log(data)
+
 
 document.getElementById('myForm').onsubmit = () => {
     return validateForm();
